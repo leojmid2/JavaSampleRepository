@@ -56,7 +56,7 @@ public class NoteController {
 	}
 	
 	//Delete a note
-	@DeleteMapping(value="notes/{id}")
+	/*@DeleteMapping(value="notes/{id}")
 	public String deleteNote(@PathVariable(value="id") Long noteId){
 		Note note = noteRepository.findById(noteId)
 				.orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
@@ -64,14 +64,14 @@ public class NoteController {
 		noteRepository.delete(note);
 		System.out.println("note" + note);
 		return "note Id " + noteId + ": Note has been deleted";
-	}
+	}*/
 	
-	/*public ResponseEntity<?> deleteNote(@PathVariable(value="id") Long noteId){
+	public ResponseEntity<?> deleteNote(@PathVariable(value="id") Long noteId){
 		Note note = noteRepository.findById(noteId)
 				.orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
 		noteRepository.delete(note);
 		return ResponseEntity.ok().build();
 	}
-	*/
+	
 
 }
