@@ -5,7 +5,14 @@ public class Customer {
 	String firstName;
 	String lastName;
 	String email;
+	String telno;
 	
+	public String getTelno() {
+		return telno;
+	}
+	public void setTelno(String telno) {
+		this.telno = telno;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
