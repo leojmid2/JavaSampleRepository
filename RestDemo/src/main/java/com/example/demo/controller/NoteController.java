@@ -60,7 +60,9 @@ public class NoteController {
 	public String deleteNote(@PathVariable(value="id") Long noteId){
 		Note note = noteRepository.findById(noteId)
 				.orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
+		System.out.println("note" + note);
 		noteRepository.delete(note);
+		System.out.println("note" + note);
 		return "note Id " + noteId + ": Note has been deleted";
 	}
 	
