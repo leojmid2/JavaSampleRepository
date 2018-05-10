@@ -8,6 +8,9 @@ public class Customer {
 
 	int age;
 	
+	boolean isActive;
+	
+	
 	public int getAge() {
 		return age;
 	}
@@ -15,7 +18,6 @@ public class Customer {
 		this.age = age;
 	}
 
-	String telno;
 	String address;
 	
 
@@ -40,18 +42,17 @@ public class Customer {
 	}
 
 	
-	public String getTelno() {
-		return telno;
-	}
-	public void setTelno(String telno) {
-		this.telno = telno;
-	}
-	
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public boolean isActive() {
+		return isActive;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
 	}
 
 
