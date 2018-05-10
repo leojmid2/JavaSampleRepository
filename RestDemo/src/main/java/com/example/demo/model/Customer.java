@@ -5,9 +5,23 @@ public class Customer {
 	String firstName;
 	String lastName;
 	String email;
-	String telno;
+
+	int age;
+	
+	boolean isActive;
+	
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 	String address;
 	
+
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -28,18 +42,17 @@ public class Customer {
 	}
 
 	
-	public String getTelno() {
-		return telno;
-	}
-	public void setTelno(String telno) {
-		this.telno = telno;
-	}
-	
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public boolean isActive() {
+		return isActive;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
 	}
 
 
