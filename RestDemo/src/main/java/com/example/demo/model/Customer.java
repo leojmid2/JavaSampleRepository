@@ -16,14 +16,10 @@ public class Customer {
 	}
 
 	String telno;
+	String address;
 	
-	public String getTelno() {
-		return telno;
-	}
-	public void setTelno(String telno) {
-		this.telno = telno;
 
-	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -42,6 +38,22 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	
+	public String getTelno() {
+		return telno;
+	}
+	public void setTelno(String telno) {
+		this.telno = telno;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 
 
 }
